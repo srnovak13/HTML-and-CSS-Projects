@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 table {
      border: 5px solid blue;
 	 }
@@ -15,4 +16,23 @@ tr, th {
 tr, td {
 	  background-color: lightblue;
 	  color: black;
+=======
+table {
+     border: 5px solid blue;
+	 }
+	 
+td:hover {
+	 background-color: yellow;
+	 color: orange;
+	 }
+	 
+tr, th {
+	  background-color: black;
+	  color: silver;
+	  }
+	  
+tr, td {
+	  background-color: lightblue;
+	  color: black;
+>>>>>>> 6c6280af78f0a0d7c1887569968dc3d02a383d61
 	  }
