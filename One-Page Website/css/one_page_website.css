@@ -1,11 +1,8 @@
-/*=================================================
-    Author: Steve Novak
-    checkoutmy.space
-===================================================
-    GENERIC STYLES
-=================================================*/
+/*===========================
+    GENERAL STYLES
+============================*/
 html {
-    font-family: sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-size: 62.5%;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     -webkit-text-size-adjust: 100%;
@@ -15,10 +12,10 @@ html {
 body {
     font-size: 14px;
     margin: 0;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Oswald', Arial, sans-serif;
     line-height: 1.42857143;
-    color: #333;
-    background-color: #fff;
+    color: rgb(15, 56, 20);
+    background-color: rgb(243, 130, 24);
 }
 
 footer, 
@@ -27,7 +24,7 @@ nav {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 h1 {
@@ -36,13 +33,13 @@ h1 {
     font-size: 30px;
     text-transform: uppercase;
     text-align: center;
-    color: #E91C1C;
+    color: #34e91c;
     text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
 }
 
 h2 {
     line-height: 50px;
-    color: #E91C1C;
+    color: #34e91c;
 }
 
 h3 {
@@ -62,6 +59,7 @@ p {
     font-weight: 300;
     line-height: 30px;
     padding-bottom: 15px;
+    text-align: center;
 }
 
 .text-center {
@@ -114,9 +112,6 @@ section {
     height: 100%;
     width: 100%;
     position: absolute;
-    /* This ensures that the images cannot
-       render outside of their container
-       without forcing any scrollbars*/
     overflow: hidden;
     top: 0;
     left: 0;
@@ -127,20 +122,17 @@ section {
     max-height: 340px;
     margin: 0% auto;
     content: "";
-    /* Top, 0;
-    Left, 0 */
-    /* position: absolute */ /*to the top edge of the screen*/
     width: 100%;
     position:fixed;
     z-index: 100;
-    /* background-color: rgba(255,255,253,0.5); */
+    
 }
 
 /*==========================================
     HOME SECTION STYLES
 ===========================================*/
 #home {
-    background: url(../images/planets.jpg) no-repeat 50% 50%;
+    background: url(../images/background.jpg) no-repeat 50% 50%;
     background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -148,23 +140,23 @@ section {
     width: 100%;
     display: block;
     height: auto;
-    padding-top: 350px; /* This is spacer before the Main title logo */
-    padding-bottom: 500px; /* This is spacer after the Maine title Logo */
+    padding-top: 350px; 
+    padding-bottom: 500px; 
     color: #fff;
 }
 
 .head-main {
     text-shadow: 2px 4px 5px rgba(0,0,0,0.9);
-    font-variant: small-caps;
-    color: #fff;
+    font-variant:normal;
+    color: rgb(50, 247, 10);
     letter-spacing: 5pt;
     word-spacing: 21pt;
     font-size: 4.5em;
     text-align: left;
-    font-family: Impact, sans-serif;
+    font-family: 'Oswald', sans-serif;
     line-height: 2;
     font-weight: 900;
-    border: 5px double #fff;
+    border: 5px double rgb(50, 247, 10);
     padding: 10px
 }
 
@@ -242,15 +234,15 @@ section {
     font-size: 15px;
     outline: none;
     font-weight: 600;
-    color: #8D8E8F;
+    color: #046109;
     padding: 12px 12px;
     width: 70%;
     border: 1px solid #8D8D80;
     margin: 2% auto;
     border-radius: 7px;
-    background: rgb(227,222,222);
+    background: rgb(230, 99, 13);
     box-shadow: 2px 3px 3px 0px rgba(0,0,0,0.3);
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 .reservation input[type="text"] {
@@ -260,19 +252,19 @@ section {
     color: #8D8E8F;
     padding: 2% 1% 2% 7%;
     width: 80%;
-    border-top:  1px solid #090B0D;
-    border-right: 2px solid #424549;
-    border-bottom: 2px solid #424549;
-    border-left: 1px solid #090B0D;
+    border-top:  1px solid #ce690a;
+    border-right: 2px solid #cc8e08;
+    border-bottom: 2px solid #a17005;
+    border-left: 1px solid #8b6c06;
     margin: 10px 1em;
     border-radius: 7px;
-    background: #13161B;
+    background: #754e05;
     box-shadow: inset 0px 3px 0px 0px rgba(5,5,5,0.15);
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 .reservation input[type="text"]:hover {
-    box-shadow: 0 0 18px rgba(100,65,0,.8);
+    box-shadow: 0 0 18px rgba(241, 161, 11, 0.8);
 }
 
 .form-spacer {
@@ -286,7 +278,7 @@ section {
     line-height: 5px;
     color: #000;
     cursor: pointer;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Oswald', sans-serif;
     position: relative;
     display: inline;
     float: right;
@@ -305,7 +297,7 @@ section {
     font-weight: 900;
     outline: none;
     text-align: center;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Oswald', sans-serif;
     margin: 0px 3%;
     padding: 7px 0px;
     width: 25%;
@@ -333,3 +325,7 @@ section {
     text-align: right;
 }
 
+.video {
+    text-align: center;
+    width: 100%;
+}

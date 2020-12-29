@@ -3,16 +3,18 @@
 <head>
 	<title>Adventure to Ireland</title>
 	<meta charset="utf-8">
+	<link rel="stylesheet" href="./css/one_page_website.css">
+	<link rel="stylesheet" href="./css/one_page_animations.css">
 </head>
 <body>
 
 
 	<!-- NAV -->
-		<div>
-			<div>
-				<ul>
-					<a href="#home" id="link"><li>Top of Page</li></a>
-					<a href="#photos"><li>Photo Gallery</li></a>
+		<div class="wrap">
+			<div class="menu-container">
+				<ul class="menu">
+					<a href="#home"><li>Top of Page</li></a>
+					<a href="#gallery"><li>Photo Gallery</li></a>
 					<a href="#contact"><li>Contact Information</li></a>
 				</ul>
 			</div>
@@ -21,13 +23,14 @@
 	
 	<!-- HOME -->
 	<div id="home">
-		<div>
-			<div>
-				<img src="./images/irelandbanner.jpg" alt="Shamrocks">
+		<div class="container">
+			<div class="text-center">
+				<span class="head-main">Adventure to Ireland</span>
 			</div>
 		</div>
 	</div>
 	<!-- END OF HOME -->
+
 	<!--QUOTE-->
 	<blockquote> 
 		<p><i>"There are no strangers here;<br>
@@ -48,124 +51,126 @@
 	<!--END OF ABOUT-->
 	
 	<!-- PHOTO GALLERY -->
-	<section>
-		<div id="photos">
+	<section id="gallery">
+		<div id="container">
 			<h1>Places in Ireland</h1>
-			<div>
+			<div class="flex-container">
 			
 			<!-- PHOTO-CONTAINER 1 -->
-				  <div>
-					<div>
-						<div>
-						    <img src="./images/blarneycastle.jpg" alt="Blarney Castle">
-							<h3>Click to explore Blarney Castle</h3>
+				  <div class="photo-container">
+					<div class="photo">
+						 <img src="./images/blarneycastle.jpg" alt="Blarney Castle">
+						 <div class="photo-overlay">
+							<h3 class="white-head">Click to explore Blarney Castle</h3>
 							<p>Enjoy the beauty of Eire!</p>
 						</div>
 					</div>
 				  </div>
 			<!-- END PHOTO-CONTAINER 1-->
-				  
+
 			<!-- PHOTO-CONTAINER 2 -->
-				  <div>
-					<div>
-						<div>
-						    <img src="./images/cashelcross.jpg" alt="Celtic Cross">
-							<h3>Click to explore Rock of Cashel</h3>
-							<p>Enjoy the beauty of Eire!</p>
-						</div>
+			<div class="photo-container">
+				<div class="photo">
+					 <img src="./images/cashelcross.jpg" alt="Celtic Cross">
+					 <div class="photo-overlay">
+						<h3 class="white-head">Click to explore Rock of Cashel</h3>
+						<p>Enjoy the beauty of Eire!</p>
 					</div>
-				  </div>
-			<!-- END PHOTO-CONTAINER 2-->	  
-			
+				</div>
+			  </div>
+			<!-- END PHOTO-CONTAINER 2-->
+
 			<!-- PHOTO-CONTAINER 3 -->
-				  <div>
-					<div>
-						<div>
-						    <img src="./images/cobh.jpg" alt="Cobh Cathedral">
-							<h3>Click to explore Cobh</h3>
-							<p>Enjoy the beauty of Eire!</p>
-						</div>
+			<div class="photo-container">
+				<div class="photo">
+					 <img src="./images/cobh.jpg" alt="Cobh Cathedral">
+					 <div class="photo-overlay">
+						<h3 class="white-head">Click to explore Cobh</h3>
+						<p>Enjoy the beauty of Eire!</p>
 					</div>
-				  </div>
+				</div>
+			  </div>
 			<!-- END PHOTO-CONTAINER 3-->
-				  
+
 			<!-- PHOTO-CONTAINER 4 -->
-				  <div>
-					<div>
-						<div>
-						    <img src="./images/darkhedge.jpg" alt="Dark Hedges">
-							<h3>Click to explore the Dark Hedges</h3>
-							<p>Enjoy the beauty of Eire!</p>
-						</div>
+			<div class="photo-container">
+				<div class="photo">
+					 <img src="./images/darkhedge.jpg" alt="Dark Hedge">
+					 <div class="photo-overlay">
+						<h3 class="white-head">Click to explore Northern Ireland</h3>
+						<p>Enjoy the beauty of Eire!</p>
 					</div>
-				  </div>
+				</div>
+			  </div>
 			<!-- END PHOTO-CONTAINER 4-->
 
 			<!-- PHOTO-CONTAINER 5 -->
-				  <div>
-					<div>
-						<div>
-						    <img src="./images/sleahead.jpg" alt="Slea Head">
-							<h3>Click to explore the Dingle Peninsula</h3>
-							<p>Enjoy the beauty of Eire!</p>
-						</div>
+			<div class="photo-container">
+				<div class="photo">
+					 <img src="./images/kinsale.jpg" alt="Kinsale">
+					 <div class="photo-overlay">
+						<h3 class="white-head">Click to explore Kinsale</h3>
+						<p>Enjoy the beauty of Eire!</p>
 					</div>
-				  </div>
+				</div>
+			  </div>
 			<!-- END PHOTO-CONTAINER 5-->
 
 			<!-- PHOTO-CONTAINER 6 -->
-				  <div>
-					<div>
-						<div>
-						    <img src="./images/kinsale.jpg" alt="Kinsale">
-							<h3>Click to explore Kinsale</h3>
-							<p>Enjoy the beauty of Eire!</p>
-						</div>
+			<div class="photo-container">
+				<div class="photo">
+					 <img src="./images/dinglesheep.jpg" alt="Sheep">
+					 <div class="photo-overlay">
+						<h3 class="white-head">Click to explore Dingle Peninsula</h3>
+						<p>Enjoy the beauty of Eire!</p>
 					</div>
-				  </div>
-			<!-- END PHOTO-CONTAINER 6-->	  
-			
-			<!--PHOTO-CONTAINER 7-->
-				  <div>
-					<div>
-						<div>
-						    <img src="./images/rosscastle.jpg" alt="Ross Castle">
-							<h3>Click to explore Ross Castle</h3>
-							<p>Enjoy the beauty of Eire!</p>
-						</div>
-					</div>
-				  </div>
-			<!--END PHOTO-CONTAINER 7-->
-				  
-			<!--PHOTO-CONTAINER 8-->
-				  <div>
-					<div>
-						<div>
-						    <img src="./images/titanicmuseum.jpg" alt="Titanic Museum">
-							<h3>Click to explore Belfast</h3>
-							<p>Enjoy the beauty of Eire!</p>
-						</div>
-					</div>
-				  </div>
-			<!--END PHOTO-CONTAINER 8-->
+				</div>
+			  </div>
+			<!-- END PHOTO-CONTAINER 6-->
 
-			<!--PHOTO-CONTAINER 9-->
-				  <div>
-					<div>
-						<div>
-						    <img src="./images/templebar.jpg" alt="Temple Bar">
-							<h3>Click to explore Dublin</h3>
-							<p>Enjoy the beauty of Eire!</p>
-						</div>
+			<!-- PHOTO-CONTAINER 7 -->
+			<div class="photo-container">
+				<div class="photo">
+					 <img src="./images/dublinliffey.jpg" alt="Dublin View">
+					 <div class="photo-overlay">
+						<h3 class="white-head">Click to explore Dublin</h3>
+						<p>Enjoy the beauty of Eire!</p>
 					</div>
-				  </div>
-			<!--END PHOTO-CONTAINER 9-->	
+				</div>
+			  </div>
+			<!-- END PHOTO-CONTAINER 7-->
+
+			<!-- PHOTO-CONTAINER 8 -->
+			<div class="photo-container">
+				<div class="photo">
+					 <img src="./images/titanicmuseum.jpg" alt="Titanic Museum">
+					 <div class="photo-overlay">
+						<h3 class="white-head">Click to explore Belfast</h3>
+						<p>Enjoy the beauty of Eire!</p>
+					</div>
+				</div>
+			  </div>
+			<!-- END PHOTO-CONTAINER 8-->
+
+			<!-- PHOTO-CONTAINER 9 -->
+			<div class="photo-container">
+				<div class="photo">
+					 <img src="./images/sleahead.jpg" alt="Slea Head">
+					 <div class="photo-overlay">
+						<h3 class="white-head">Click to explore the Atlantic Coast</h3>
+						<p>Enjoy the beauty of Eire!</p>
+					</div>
+				</div>
+			  </div>
+			<!-- END PHOTO-CONTAINER 9-->
+				  
+				
 			</div>
 		</div>
 	</section>
 	
 	<!--VIDEO-->
-	<section>
+	<section class="video">
 		<div>
 			<div>
 				<h2>Watch this video for travel tips</h2>
@@ -175,18 +180,18 @@
 	<!--END OF VIDEO-->
 	
 	<!--CONTACT FORM-->
-	<section>
-			<div id="contact">
-				<div>
-					<h1>Request Information</h1>
-					<div>
+	<section id="contact">
+			<div class="container">
+				<div class="heading-padding">
+					<h1 class="heading-padding">Request Information</h1>
+					<div class="reservation">
 						<h2><span>Your Irish adventure begins here!</span>
 							<br/>Request your free information packet!
 						</h2>
-						<p>
+						<p class="rsvp-text">
 							Please provide us with your contact information.
 						</p>
-						<div>
+						<div class="form-rsvp">
 							<form action="" method="post">
 								<input class="rsvp" type="text" value="First Name">
 								<input class="rsvp" type="text" value="Last Name">
@@ -207,5 +212,8 @@
 	<!--END CONTACT FORM-->
 	
 	<!--FOOTER-->
-	<div>
+	<div id="footer">
 		www.irelandtravel.com &nbsp;|&nbsp; 1Thirteen3 Productions&copy;2020
+	<!--END OF FOOTER-->	
+	</body>
+	</html>
