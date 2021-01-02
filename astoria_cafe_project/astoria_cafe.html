@@ -8,50 +8,72 @@
     </head>
 <body>
 
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </div>
   
 
-    <div class="container">
+    <div class="container main" id="home">
         <img src="images/artstoria.png" alt="Astoria" width="1000" height="300">
-        <div class="center">Welcome to the Astoria Cafe</div>
+        <div class="overlay">
+            <div class="text">Welcome to the Astoria Cafe</div>
+        </div>
     </div>
 
-    <table>
+    <table id="about">
         <tr>
-            <th>Drinks</th>
+            <th>Sizes</th>
             <th>Sandwiches</th>
             <th>Salads</th>
         </tr>
         <tr>
-            <td>Coffee</td>
-            <td>Caprese</td>
-            <td>Chef's Salad</td>
+            <td>Small</td>
+            <td>$3.00</td>
+            <td>$4.00</td>
         </tr>
         <tr>
-            <td>Beer</td>
-            <td>Croque Monsieur</td>
-            <td>Pasta Salad</td>
+            <td>Medium</td>
+            <td>$3.50</td>
+            <td>$4.50</td>
         </tr>
         <tr>
-            <td>Wine</td>
-            <td>PB&J</td>
-            <td>Spinach and Goat Cheese</td>
+            <td>Large</td>
+            <td>$5.00</td>
+            <td>$6.00</td>
         </tr>
-
-
-
-
-
-
-
-
     </table>
 
+    <div class="row">
+        <div class="column">
+            <h3>Sandwiches</h3>
+            <p>Caprese</p>
+            <p>Turkey Reuben</p>
+            <p>PB & J</p>
+        </div>
+        <div class="column">
+            <h3>Salads</h3>
+            <p>Chef's </p>
+            <p>Spinach and Goat Cheese</p>
+            <p>Southwestern Taco Salad</p>
+        </div>
+    </div>
 
-    
+    <div class="container">
+        <video controls autoplay muted loop>
+            <source src="./images/Beach.mp4" type="video/mp4">
+        </video>  
+            <div class="overlay">
+                <div class="text">Come to the Coast</div>
+            </div>    
+        
+    </div>  
 
-        <footer>
+        <footer id="contact">
             <p>1Productions3 &copy; 2020</p>
             <p>Email: 13Pro@gmail.com</p>
+            <p>Phone: 503-555-4789</p>
 
         </footer>
 

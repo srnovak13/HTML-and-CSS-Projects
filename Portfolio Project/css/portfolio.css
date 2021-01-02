@@ -1,0 +1,278 @@
+/****GENERAL STYLING*****/
+body {
+    margin: 0%;
+}
+
+/**HEADING 1 ELEMENTS**/
+h1 {
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    margin-top: 3%;
+    color: #1a1a1a;
+}
+
+h1:hover {
+    filter: grayscale(5%);
+    transform: scale(1.1);
+    transition: transform 1s;
+}
+
+.white-text {
+    color: #fff;
+}
+
+/**PARAGRAPH ELEMENTS**/
+p {
+    font-family: Goudy Old Style, Rockwell Extra Bold;
+    text-align: justify;
+    letter-spacing: 1px;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+p:hover {
+    transition: transform 1s;
+    transform: scale(1.01)
+}
+
+.center {
+    text-align: center;
+}
+
+.center:hover {
+    transition: transform 2s;
+    transform: scale(1.1);
+}
+
+/**ANCHOR ELEMENTS**/
+a {
+    color: blue;
+}
+
+/**QUOTATION ELEMENTS**/
+q {
+    font-style: italic;
+    
+}
+
+/**IMAGE ELEMENTS**/
+img {
+    filter: grayscale(75%);
+    border-radius: 8px;
+    max-width: 100%;
+    height: 340px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img:hover {
+    filter: grayscale(5%);
+    transition: transform 1s;
+    transform: scale(1.1);
+}
+
+.profile_pic {
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#About {
+    display: flexbox;
+    align-items: center;
+}
+
+
+/**FOOTER ELEMENT**/
+footer {
+    padding: 2%;
+    background-color: rgb(117, 111, 111);
+    
+}
+
+.twitter-follow-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/**END OF GENERAL STYLING**/
+
+/**NAVBAR STYLING**/
+.Navbar {
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    -webkit-animation: moveNav 5s;
+    animation: moveNav 5s;
+}
+
+@keyframes moveNav {
+    from {left: -100vw;}
+    to {left: 0vw;}
+}
+
+.Navbar a {
+    float: left;
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Goudy Old Style, Helvetica;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    -webkit-animation: moveNavText 5.75s;
+    animation: moveNavText 5.75s;
+}
+
+@keyframes moveNavText {
+    from {top: -100vw;}
+    to {top: 0vw}
+}
+
+@media screen and (max-width: 576px) {
+    .Navbar a{
+        width: 25%;
+        font-size: 12px;
+    }
+}
+
+,Navbar a.active {
+    background-color: darkgray;
+}
+
+/**END OF NAVBAR STYLING**/
+
+/**VIDEO STYLING**/
+#Typing_Video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    z-index: -1;
+}
+
+@media screen and (max-width: 576px) {
+    #Typing_Video {
+        display: none;
+    }
+}
+
+.Video_Text {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    -webkit-animation: moveVideoText 5.75s;
+    animation: moveVideoText 5.75s
+}
+
+@keyframes moveVideoText {
+    from {top: -100vw;}
+    to {top: 0vw}
+}
+
+/**END OF VIDEO STYLING**/
+
+/**TABLE STYLING**/
+* {
+    box-sizing: border-box;
+}
+
+.Column_1 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 3%;
+    height: 400px;
+    background-color: #f2f2f2d0;
+    
+}
+
+@media screen and (max-width: 576px) {
+    .Column_1 {
+        overflow: auto;
+    }
+}
+
+.Column_2 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 1.9%;
+    height: 400px;
+    background-color: #4d4d4d;
+}
+
+.Column_tall {
+    padding-top: 3.5%;
+    height: 450px;
+}
+
+.Row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/**END OF TABLE STYLING**/
+
+/**CONTACT FORM STYLING**/
+
+input[type=text] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: Perpetua, Rockwell Extra Bold;
+}
+
+input[type=text]:hover {
+    box-shadow: 0 0 5px #00004d inset;
+}
+
+input[type=submit] {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Perpetua, Rockwell Extra Bold;
+}
+
+input[type=submit]:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.5);
+    transition: transform 1.5s;
+}
+
+form {
+    border-radius: 5px;
+    background-color: #f2f2f2c4;
+    padding: 10px;
+    font-family: Bodoni MT, Rockwell, sans-serif;
+}
+
+/**END OF CONTACT FORM STYLING**/

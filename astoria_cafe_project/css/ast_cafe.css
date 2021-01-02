@@ -10,6 +10,7 @@ img {
     border-radius: 15%;
     height: auto;
     width: 100%;
+    display: block;
     
 }
 
@@ -40,13 +41,74 @@ table {
 .container {
     position: relative;
     text-align: center;
-    color: orange;
+    color: midnightblue;
     
 }
 
-.center {
+.text {
     position: absolute;
-    top: 50%;
-    bottom: 50%;
+    top: 25%;
+    left: 50%;
     transform: translate(-50%, -50%);
+    font-size: x-large;
+    color: darkslategray;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: darkslategray;
+    position: fixed;
+    top: 0;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: deepskyblue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+
+.main {
+    margin-top: 50px;
+}
+
+.navbar a:hover {
+    background-color: dodgerblue;
+    color: gold;
+
+}
+
+.column {
+    float: left;
+    width: 50%;
+    height: 200px;
+    background-color: paleturquoise;
+    color: darkslategrey;
+}
+
+p:hover {
+    color: gold;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: darkturquoise;
+}
+
+.container:hover .overlay {
+    opacity: 1;
 }
