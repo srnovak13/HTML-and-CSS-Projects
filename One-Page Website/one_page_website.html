@@ -59,7 +59,7 @@
 			<!-- PHOTO-CONTAINER 1 -->
 				  <div class="photo-container">
 					<div class="photo">
-						 <img src="./images/blarneycastle.jpg" alt="Blarney Castle">
+						 <img src="./images/blarneycastle.jpg" alt="Blarney Castle" onclick="openModal(); currentSlide(1)" class="hover-shadow">
 						 <div class="photo-overlay">
 							<h3 class="white-head">Click to explore Blarney Castle</h3>
 							<p>Enjoy the beauty of Eire!</p>
@@ -71,7 +71,7 @@
 			<!-- PHOTO-CONTAINER 2 -->
 			<div class="photo-container">
 				<div class="photo">
-					 <img src="./images/cashelcross.jpg" alt="Celtic Cross">
+					 <img src="./images/cashelcross.jpg" alt="Celtic Cross" onclick="openModal(); currentSlide(2)" class="hover-shadow">
 					 <div class="photo-overlay">
 						<h3 class="white-head">Click to explore Rock of Cashel</h3>
 						<p>Enjoy the beauty of Eire!</p>
@@ -83,7 +83,7 @@
 			<!-- PHOTO-CONTAINER 3 -->
 			<div class="photo-container">
 				<div class="photo">
-					 <img src="./images/cobh.jpg" alt="Cobh Cathedral">
+					 <img src="./images/cobh.jpg" alt="Cobh Cathedral" onclick="openModal(); currentSlide(3)" class="hover-shadow" >
 					 <div class="photo-overlay">
 						<h3 class="white-head">Click to explore Cobh</h3>
 						<p>Enjoy the beauty of Eire!</p>
@@ -95,7 +95,7 @@
 			<!-- PHOTO-CONTAINER 4 -->
 			<div class="photo-container">
 				<div class="photo">
-					 <img src="./images/darkhedge.jpg" alt="Dark Hedge">
+					 <img src="./images/darkhedge.jpg" alt="Dark Hedge" onclick="openModal(); currentSlide(4)" class="hover-shadow">
 					 <div class="photo-overlay">
 						<h3 class="white-head">Click to explore Northern Ireland</h3>
 						<p>Enjoy the beauty of Eire!</p>
@@ -107,7 +107,7 @@
 			<!-- PHOTO-CONTAINER 5 -->
 			<div class="photo-container">
 				<div class="photo">
-					 <img src="./images/kinsale.jpg" alt="Kinsale">
+					 <img src="./images/kinsale.jpg" alt="Kinsale" onclick="openModal(); currentSlide(5)" class="hover-shadow">
 					 <div class="photo-overlay">
 						<h3 class="white-head">Click to explore Kinsale</h3>
 						<p>Enjoy the beauty of Eire!</p>
@@ -119,7 +119,7 @@
 			<!-- PHOTO-CONTAINER 6 -->
 			<div class="photo-container">
 				<div class="photo">
-					 <img src="./images/dinglesheep.jpg" alt="Sheep">
+					 <img src="./images/dinglesheep.jpg" alt="Sheep" onclick="openModal(); currentSlide(6)" class="hover-shadow" >
 					 <div class="photo-overlay">
 						<h3 class="white-head">Click to explore Dingle Peninsula</h3>
 						<p>Enjoy the beauty of Eire!</p>
@@ -131,7 +131,7 @@
 			<!-- PHOTO-CONTAINER 7 -->
 			<div class="photo-container">
 				<div class="photo">
-					 <img src="./images/dublinliffey.jpg" alt="Dublin View">
+					 <img src="./images/dublinliffey.jpg" alt="Dublin View" onclick="openModal(); currentSlide(7)" class="hover-shadow">
 					 <div class="photo-overlay">
 						<h3 class="white-head">Click to explore Dublin</h3>
 						<p>Enjoy the beauty of Eire!</p>
@@ -143,7 +143,7 @@
 			<!-- PHOTO-CONTAINER 8 -->
 			<div class="photo-container">
 				<div class="photo">
-					 <img src="./images/titanicmuseum.jpg" alt="Titanic Museum">
+					 <img src="./images/titanicmuseum.jpg" alt="Titanic Museum" onclick="openModal(); currentSlide(8)" class="hover-shadow">
 					 <div class="photo-overlay">
 						<h3 class="white-head">Click to explore Belfast</h3>
 						<p>Enjoy the beauty of Eire!</p>
@@ -155,7 +155,7 @@
 			<!-- PHOTO-CONTAINER 9 -->
 			<div class="photo-container">
 				<div class="photo">
-					 <img src="./images/sleahead.jpg" alt="Slea Head">
+					 <img src="./images/sleahead.jpg" alt="Slea Head" onclick="openModal(); currentSlide(9)" class="hover-shadow">
 					 <div class="photo-overlay">
 						<h3 class="white-head">Click to explore the Atlantic Coast</h3>
 						<p>Enjoy the beauty of Eire!</p>
@@ -167,7 +167,108 @@
 				
 			</div>
 		</div>
+		<!-- START OF LIGHTBOX -->
+     <div id="myModal" class="modal">
+		<span class="close cursor" onclick="closeModal()">&times;</span>
+	 <div class="modal-content">
+  
+	  <div class="mySlides">
+		<div class="numbertext">1 / 9</div>
+		<img src="./images/blarneycastle.jpg" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">2 / 9</div>
+		<img src="./images/cashelcross.jpg" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">3 / 9</div>
+		<img src="./images/cobh.jpg" style="width:100%">
+	  </div>
+  
+	  <div class="mySlides">
+		<div class="numbertext">4 / 9</div>
+		<img src="./images/darkhedge.jpg" style="width:100%">
+	  </div>
+
+	  <div class="mySlides">
+		<div class="numbertext">5 / 9</div>
+		<img src="./images/kinsale.jpg" style="width:100%">
+	  </div>
+
+	  <div class="mySlides">
+		<div class="numbertext">6 / 9</div>
+		<img src="./images/dinglesheep.jpg" style="width:100%">
+	  </div>
+
+	  <div class="mySlides">
+		<div class="numbertext">7 / 9</div>
+		<img src="./images/dublinliffey.jpg" style="width:100%">
+	  </div>
+
+
+  	  <div class="mySlides">
+		<div class="numbertext">8 / 9</div>
+		<img src="./images/titanicmuseum.jpg" style="width:100%">
+	  </div>
+
+	  <div class="mySlides">
+		<div class="numbertext">9 / 9</div>
+		<img src="./images/sleahead.jpg" style="width:100%">
+	  </div>
+	  
+	  <!-- NEXT/PREVIOUS CONTROLS -->
+	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+	  <!-- CAPTION TEXT -->
+	  <div class="caption-container">
+		<p id="Ireland"></p>
+	  </div>
+  
+	  <!-- THUMBNAIL IMAGE CONTROLS -->
+	  <div class="column">
+		<img class="demo" src="./images/blarneycastle.jpg" onclick="currentSlide(1)" alt="Blarney Castle">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="./images/cashelcross.jpg" onclick="currentSlide(2)" alt="Rock of Cashel">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="./images/cobh.jpg" onclick="currentSlide(3)" alt="Cobh Harbour">
+	  </div>
+  
+	  <div class="column">
+		<img class="demo" src="./images/darkhedge.jpg" onclick="currentSlide(4)" alt="Dark Hedges">
+	  </div>
+
+	  <div class="column">
+		<img class="demo" src="./images/kinsale.jpg" onclick="currentSlide(5)" alt="Kinsale">
+	  </div>
+
+	  <div class="column">
+		<img class="demo" src="./images/dinglesheep.jpg" onclick="currentSlide(6)" alt="Sheep">
+	  </div>
+
+	  <div class="column">
+		<img class="demo" src="./images/dublinliffey.jpg" onclick="currentSlide(7)" alt="Dublin">
+	  </div>
+
+	  <div class="column">
+		<img class="demo" src="./images/titanicmuseum.jpg" onclick="currentSlide(8)" alt="Titanic Museum">
+	  </div>
+
+	  <div class="column">
+		<img class="demo" src="./images/sleahead.jpg" onclick="currentSlide(9)" alt="Slea Head">
+	  </div>
+      
+
+	</div>
+  </div>
 	</section>
+
 	
 	<!--VIDEO-->
 	<section class="video">
@@ -214,6 +315,7 @@
 	<!--FOOTER-->
 	<div id="footer">
 		www.irelandtravel.com &nbsp;|&nbsp; 1Thirteen3 Productions&copy;2020
-	<!--END OF FOOTER-->	
+	<!--END OF FOOTER-->
+	<script src="js/one_page_website.js"></script>	
 	</body>
 	</html>
