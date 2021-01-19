@@ -383,10 +383,9 @@ LIGHTBOX STYLES
   .next {
     cursor: pointer;
     position: absolute;
-    top: 50%;
     width: auto;
     padding: 16px;
-    margin-top: -50px;
+    margin-top: -50%;
     color: white;
     font-weight: bold;
     font-size: 20px;
@@ -394,7 +393,8 @@ LIGHTBOX STYLES
     border-radius: 0 3px 3px 0;
     user-select: none;
     -webkit-user-select: none;
-  }
+   } 
+    
   
   /*==POSITION 'NEXT' BUTTON TO RIGHT==*/
   .next {
@@ -416,6 +416,10 @@ LIGHTBOX STYLES
     position: absolute;
     top: 0;
   }
+
+  img {
+      margin-bottom: -4px;
+  }
   
   /*==CAPTION TEXT==*/
   .caption-container {
@@ -429,6 +433,7 @@ LIGHTBOX STYLES
     opacity: 0.6;
     width: 320px;
     height: 240px;
+    display: inline-block;
   }
   
   .active,
@@ -443,3 +448,10 @@ LIGHTBOX STYLES
   .hover-shadow:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
+
+
+.column {
+    float: left;
+    width: 32%;
+    height: 25%;
+}
