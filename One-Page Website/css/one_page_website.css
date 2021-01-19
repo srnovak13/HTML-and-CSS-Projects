@@ -336,7 +336,7 @@ LIGHTBOX STYLES
 .modal {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 150;
     padding-top: 100px;
     left: 0;
     top: 0;
@@ -427,6 +427,8 @@ LIGHTBOX STYLES
   
   img.demo {
     opacity: 0.6;
+    width: 320px;
+    height: 240px;
   }
   
   .active,
